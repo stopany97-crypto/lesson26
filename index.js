@@ -76,7 +76,44 @@ console.log(str21.replace(/Maga/, "JS"));
 
 
 
+console.log("i love javascript".match(/javascript/ig));
+const str31 = " i love javascript"
+console.log(str31.replace(/javascript/, "payton"));
+const sh = /\d+/g
+console.log(sh.test("123456789"));
+console.log("123456789".match(sh));
+const sh3= /\./
+console.log(sh3.test("привет.как дела?"));
+
+
+// " у меня 2 яблока, 10 груш и 150 рублей"
+
+// const sh4 = 
+// console.log(" у меня 2 яблока, 10 груш и 150 рублей". match);
+
+
+// const sh5 = /\#+\w/
+// console.log(" крутой день! #javascript #coding #100days".test(sh5));
+
+
+// const sh7 = /^[A-Za-z0-9]{6,12}$/
+// console.log(sh7.test("pass1234"));
+
+
+// const sh5= /^[\w]{6,12}$/
+// console.log(sh5.test("pass1234"));
 
 
 
+// console.log("это    очень     длинная     строка".replace(/\s+\g, ' '/));
+
+// let sh8 = /^8(d+{3}){3}+\s+\{2}+\s+\{2}$/
+ 
+
+// console.log(sh8.replace("89991234567"))
+
+
+const phone = "89991234567"
+
+console.log(phone.replace(/8(\d{3})(\d{3})(\d{2})(\d{2})$/ , `+7 ($1) $2-$3-$4`));
 
